@@ -90,7 +90,3 @@ python train_model.py
 - Integrate transformer-based sentiment models.
 - Expand to multi-asset forecasting.
 - Deploy real-time prediction dashboard.
-
----
-
-Would you like me to generate a badge or add a visual diagram to the README next?
