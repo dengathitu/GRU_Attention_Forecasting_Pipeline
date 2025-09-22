@@ -43,12 +43,6 @@ This project was developed in a Google Colab environment using Python 3. To repl
     pip install -r requirements.txt
     ```
 
-requirements.txt`
-pandas==2.0.3
-numpy==1.25.2
-scikit-learn==1.3.0
-tensorflow==2.15.0
-
 ## Usage
 
 The entire pipeline is contained within the Jupyter Notebook (`GRU_Attention_Forecasting_Pipeline.ipynb`).
