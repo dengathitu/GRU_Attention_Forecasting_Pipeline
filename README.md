@@ -1,8 +1,8 @@
-##Forecasting Bitcoin Price Movements Using GRU-Attention Networks and Sentiment-Enhanced Features
+## Forecasting Bitcoin Price Movements Using GRU-Attention Networks and Sentiment-Enhanced Features
 
 This repository contains the complete, end-to-end machine learning pipeline for the Master's dissertation by Den Peters Ngotho Gathitu. The project investigates whether the integration of systematically engineered sentiment data can improve the predictive accuracy of a GRU-Attention deep learning model for forecasting hourly Bitcoin price movements.
 
-##Abstract
+## Abstract
 
 The forecasting of volatile cryptocurrency markets, such as Bitcoin, presents a significant challenge for traditional financial models. This research introduces and validates a novel forecasting pipeline that enhances a Gated Recurrent Unit with Attention mechanism (GRU-Attention) model with a robust, data-driven sentiment feature. Over 200 distinct sentiment indicators from online social media were distilled into a single feature using Principal Component Analysis (PCA). A controlled experiment was conducted to compare the performance of this sentiment-enhanced model against an identical baseline model. The findings confirm that the integration of methodically engineered sentiment data provides a significant and quantifiable improvement in forecasting performance.
 
@@ -13,21 +13,21 @@ The research is structured as a controlled experiment. The pipeline ingests raw 
 ![Conceptual Research Framework](figure_3_1_conceptualframework.png)
 
 The key stages are:
-1.  Data Acquisition: Sourcing hourly Bitcoin OHLCV data and high-frequency sentiment data.
-2.  Preprocessing: Standardizing timestamps, merging the two datasets with an inner join, and imputing missing values using a forward-fill method.
+1.  *Data Acquisition*: Sourcing hourly Bitcoin OHLCV data and high-frequency sentiment data.
+2.  *Preprocessing*: Standardizing timestamps, merging the two datasets with an inner join, and imputing missing values using a forward-fill method.
 3.  Feature Engineering:
     - Defining the target variable as the future hourly percentage return.
     - Applying Principal Component Analysis (PCA) to over 200 raw sentiment indicators to create a single, robust `sentiment_pca` feature.
-4.  Controlled Experiment:
-    - Baseline Model: A GRU-Attention network trained only on historical price and volume data.
-    - Enhanced Model: An identical GRU-Attention network trained on price/volume data *plus* the `sentiment_pca` feature.
-5.  Evaluation: Comparing the performance of both models on an unseen test set using standard regression metrics.
+4.  *Controlled Experiment*:
+    - *Baseline Model*: A GRU-Attention network trained only on historical price and volume data.
+    - *Enhanced Model*: An identical GRU-Attention network trained on price/volume data *plus* the `sentiment_pca` feature.
+5.  *Evaluation*: Comparing the performance of both models on an unseen test set using standard regression metrics.
 
 ## Datasets
 
 The two datasets used in this project were sourced from:
-- BTC Prices: [Bitcoin Hourly OHCLV Dataset by Mouad Jaouad](https://github.com/mouadja02/bitcoin-hourly-ohclv-dataset)
-- Sentiment Data: [Aggregated Sentiment Metrics for Bitcoin from Augmento.ai](https://www.augmento.ai/download/2317/)
+- *TC Prices*: [Bitcoin Hourly OHCLV Dataset by Mouad Jaouad](https://github.com/mouadja02/bitcoin-hourly-ohclv-dataset)
+- *Sentiment Data*: [Aggregated Sentiment Metrics for Bitcoin from Augmento.ai](https://www.augmento.ai/download/2317/)
 
 ## Installation and Setup
 
@@ -77,4 +77,4 @@ Den Peters Ngotho Gathitu, "Forecasting Bitcoin Price Movements Using GRU-Attent
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.n
+This project is licensed under the MIT License. See the `LICENSE` file for details.
