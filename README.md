@@ -15,7 +15,7 @@ The research is structured as a controlled experiment. The pipeline ingests raw 
 The key stages are:
 1.  *Data Acquisition*: Sourcing hourly Bitcoin OHLCV data and high-frequency sentiment data.
 2.  *Preprocessing*: Standardizing timestamps, merging the two datasets with an inner join, and imputing missing values using a forward-fill method.
-3.  Feature Engineering:
+3.  *Feature Engineering*:
     - Defining the target variable as the future hourly percentage return.
     - Applying Principal Component Analysis (PCA) to over 200 raw sentiment indicators to create a single, robust `sentiment_pca` feature.
 4.  *Controlled Experiment*:
@@ -26,7 +26,7 @@ The key stages are:
 ## Datasets
 
 The two datasets used in this project were sourced from:
-- *TC Prices*: [Bitcoin Hourly OHCLV Dataset by Mouad Jaouad](https://github.com/mouadja02/bitcoin-hourly-ohclv-dataset)
+- *BTC Prices*: [Bitcoin Hourly OHCLV Dataset by Mouad Jaouad](https://github.com/mouadja02/bitcoin-hourly-ohclv-dataset)
 - *Sentiment Data*: [Aggregated Sentiment Metrics for Bitcoin from Augmento.ai](https://www.augmento.ai/download/2317/)
 
 ## Installation and Setup
