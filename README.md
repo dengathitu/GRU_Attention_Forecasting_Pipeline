@@ -10,8 +10,6 @@ The forecasting of volatile cryptocurrency markets, such as Bitcoin, presents a 
 
 The research is structured as a controlled experiment. The pipeline ingests raw price and sentiment data, processes it, engineers features, and then trains two models in parallel for a direct comparison.
 
-![Conceptual Research Framework](figure_3_1_conceptualframework.png)
-
 The key stages are:
 1.  *Data Acquisition*: Sourcing hourly Bitcoin OHLCV data and high-frequency sentiment data.
 2.  *Preprocessing*: Standardizing timestamps, merging the two datasets with an inner join, and imputing missing values using a forward-fill method.
